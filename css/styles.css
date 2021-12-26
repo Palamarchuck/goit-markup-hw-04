@@ -315,8 +315,10 @@ img {
 .filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .filter-list {
+  margin-right: 8px;
 }
 .filter-btn {
   cursor: pointer;
