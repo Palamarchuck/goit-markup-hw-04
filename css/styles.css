@@ -52,6 +52,10 @@ img {
   padding-right: 15px;
   outline: 2px solid tomato;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* ----------HEADER---------- */
 .header-link:hover,
@@ -172,7 +176,6 @@ img {
 
 /* ----------METHODS---------- */
 .methods-list {
-  padding-top: 94px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -198,10 +201,6 @@ img {
   color: var(--title-text-color);
 }
 /* ----------ABOUT---------- */
-.about {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -222,9 +221,6 @@ img {
 }
 
 /* ----------Наша команда---------- */
-.team {
-  padding-top: 94px;
-}
 .team-pre-title {
   font-weight: 700;
   font-size: 36px;
@@ -273,7 +269,6 @@ img {
 }
 .footer {
   background-color: var(--second-background-color);
-  margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -317,9 +312,16 @@ img {
   color: var(--second-title-text-color);
   background-color: var(--accent-color);
 }
-
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-list {
+}
 .filter-btn {
   cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 50px;
 }
 .filter-btn {
   font-weight: 500;
@@ -332,6 +334,19 @@ img {
 .filter-btn-first {
   background-color: var(--accent-color);
   color: var(--second-title-text-color);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.projecrs-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 }
 .projects-title {
   font-weight: 700;
@@ -347,4 +362,7 @@ img {
   line-height: 1.88;
   text-align: left;
   color: var(--title-text-color);
+}
+.projecrs-item-container {
+  padding: 20px 24px;
 }

@@ -10,17 +10,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
+            <a class="header-logo" href=""><span class="logo-first">Web</span>Studio</a>
             <nav class="header-nav">
-                <a class="header-logo" href=""><span class="logo-first">Web</span>Studio</a>
                 <ul class="list header-list">
-                    <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
-                    <li class="header-item"><a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item"><a class="link header-link current" href="">Студия</a></li>
+                    <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -32,15 +34,15 @@
     </header>
     <main>
     <!-- Filter -->
-        <section class="text section">
+        <section class="section text">
             <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="filter">
-                    <li class="list"><button type="button" class="filter-btn filter-btn-first">Все</button></li>
-                    <li class="list"><button type="button" class="filter-btn">Веб-сайты</button></li>
-                    <li class="list"><button type="button" class="filter-btn">Приложения</button></li>
-                    <li class="list"><button type="button" class="filter-btn">Дизайн</button></li>
-                    <li class="list"><button type="button" class="filter-btn">Маркетинг</button></li>
+                    <li class="list filter-list"><button type="button" class="filter-btn filter-btn-first">Все</button></li>
+                    <li class="list filter-list"><button type="button" class="filter-btn">Веб-сайты</button></li>
+                    <li class="list filter-list"><button type="button" class="filter-btn">Приложения</button></li>
+                    <li class="list filter-list"><button type="button" class="filter-btn">Дизайн</button></li>
+                    <li class="list filter-list"><button type="button" class="filter-btn">Маркетинг</button></li>
                 </ul>
                 <ul class="projects">
                     <li class="list projecrs-item">
@@ -48,9 +50,11 @@
                             <img src="./images/projects-img-1.jpg" 
                                 alt="ноутбук"
                                 width="370"
-                                height="294">>
-                            <h2 class="projects-title">Технокряк</h2>
-                            <p class="projects-after-title">Веб-сайт</p>
+                                height="294">
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Технокряк</h2>
+                                <p class="projects-after-title">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -59,8 +63,10 @@
                                 alt="играют в баскетбол"
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                            <p class="projects-after-title">Дизайн</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="projects-after-title">Дизайн</p>
+                            </div>
                         </a>
                         
                     </li>
@@ -70,8 +76,10 @@
                                 alt="логотип ресторана" 
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Ресторан Seafood</h2>
-                            <p class="projects-after-title">Приложение</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Ресторан Seafood</h2>
+                                <p class="projects-after-title">Приложение</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -80,8 +88,10 @@
                                 alt="наушники" 
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Проект Prime</h2>
-                            <p class="projects-after-title">Маркетинг</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Проект Prime</h2>
+                                <p class="projects-after-title">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -90,8 +100,10 @@
                                 alt="коробки" 
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Проект Boxes</h2>
-                            <p class="projects-after-title">Приложение</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Проект Boxes</h2>
+                                <p class="projects-after-title">Приложение</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -100,8 +112,10 @@
                                 alt="монитор" 
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Inspiration has no Borders</h2>
-                            <p class="projects-after-title">Веб-сайт</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Inspiration has no Borders</h2>
+                                <p class="projects-after-title">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -110,8 +124,10 @@
                                 alt="открытая статья" 
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Издание Limited Edition</h2>
-                            <p class="projects-after-title">Дизайн</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Издание Limited Edition</h2>
+                                <p class="projects-after-title">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -120,8 +136,10 @@
                                 alt="бирка" 
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Проект LAB</h2>
-                            <p class="projects-after-title">Маркетинг</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Проект LAB</h2>
+                                <p class="projects-after-title">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="list projecrs-item">
@@ -130,8 +148,10 @@
                                 alt="печатает на ноутбуке"
                                 width="370"
                                 height="294">
-                            <h2 class="projects-title">Growing Business</h2>
-                            <p class="projects-after-title">Приложение</p>
+                            <div class="projecrs-item-container">
+                                <h2 class="projects-title">Growing Business</h2>
+                                <p class="projects-after-title">Приложение</p>
+                            </div>
                         </a>
                     </li>
 
