@@ -108,15 +108,13 @@ img {
 .header-mail {
   margin-right: 50px;
 }
-.header-tel {
-  margin-right: 215px;
-}
 .header-link {
   color: var(--header-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
 }
 .current {
   color: var(--accent-color);
@@ -153,6 +151,8 @@ img {
   color: var(--second-title-text-color);
   background-color: var(--accent-color);
   border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
   padding: 10px 32px;
   margin-top: 40px;
   margin-left: auto;
@@ -173,6 +173,15 @@ img {
 /* ----------METHODS---------- */
 .methods-list {
   padding-top: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.methods-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .methods-title {
   font-weight: 700;
@@ -200,6 +209,19 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.about-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* ----------Наша команда---------- */
 .team {
   padding-top: 94px;
 }
@@ -208,15 +230,13 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .team-after-title {
   font-weight: 400;
@@ -224,8 +244,22 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
   margin-bottom: 30px;
 }
+.team-title-conainer {
+  padding: 30px 60px;
+}
+
 /* ----------FOOTER---------- */
 .footer-logo {
   font-family: raleway;
@@ -235,7 +269,6 @@ img {
   text-align: center;
   color: var(--second-title-text-color);
   text-decoration: none;
-  display: inline-block;
   margin-bottom: 20px;
 }
 .footer {
